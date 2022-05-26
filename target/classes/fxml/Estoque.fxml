@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="642.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.cefsa.projeto.controller.EstoqueController">
+   <children>
+      <ImageView fitHeight="642.0" fitWidth="1043.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-18.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../../../../../../Area%20de%20Trabalho/Instalação%20para%20javaFx/Image%20JavaFX/fundoEstoque2.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tabela" layoutX="71.0" layoutY="100.0" prefHeight="319.0" prefWidth="872.0" stylesheets="@../styles/TableViewEstilo.css" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="82.0">
+        <columns>
+          <TableColumn fx:id="clmDescricao" prefWidth="691.1999435424805" text="Descrição" />
+            <TableColumn fx:id="clmValorUni" minWidth="0.0" prefWidth="88.800048828125" text="Valor Unitario" />
+          <TableColumn fx:id="clmQuantidade" prefWidth="92.7999267578125" text="Quantidade" />
+        </columns>
+      </TableView>
+      <Button fx:id="btVoltar" layoutX="70.0" layoutY="529.0" mnemonicParsing="false" styleClass="icon-button" stylesheets="@../styles/AlteraFundoBotaoJavaFX.css" AnchorPane.bottomAnchor="30.0">
+         <graphic>
+            <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Area%20de%20Trabalho/Instalação%20para%20javaFx/Image%20JavaFX/Voltar.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btCadastro" layoutX="858.0" layoutY="513.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="100.0" styleClass="icon-button" stylesheets="@../styles/AlteraFundoBotaoJavaFX.css" AnchorPane.bottomAnchor="30.0">
+         <graphic>
+            <ImageView fitHeight="75.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Area%20de%20Trabalho/Instalação%20para%20javaFx/Image%20JavaFX/cadastro.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btAtualiza" alignment="CENTER" contentDisplay="CENTER" layoutX="739.0" layoutY="513.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="103.0" styleClass="icon-button" stylesheets="@../styles/AlteraFundoBotaoJavaFX.css">
+         <graphic>
+            <ImageView fitHeight="83.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Area%20de%20Trabalho/Instalação%20para%20javaFx/Image%20JavaFX/atualizar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btDeleta" alignment="CENTER" contentDisplay="CENTER" layoutX="623.0" layoutY="512.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="103.0" styleClass="icon-button" stylesheets="@../styles/AlteraFundoBotaoJavaFX.css">
+         <graphic>
+            <ImageView fitHeight="83.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../Area%20de%20Trabalho/Instalação%20para%20javaFx/Image%20JavaFX/botao-de-deletar.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="419.0" layoutY="27.0" prefHeight="45.0" prefWidth="150.0" styleClass="icon-button" stylesheets="@../styles/AlteraFundoLabelJavaFX.css" text="Estoque" textFill="WHITE">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txDescricaoPeca" layoutX="72.0" layoutY="454.0" prefHeight="25.0" prefWidth="587.0" promptText="Drecrição da Peça" />
+      <TextField fx:id="txValor" layoutX="659.0" layoutY="454.0" prefHeight="25.0" prefWidth="98.0" promptText="Valor" />
+      <TextField fx:id="txQtd" layoutX="757.0" layoutY="454.0" prefHeight="25.0" prefWidth="103.0" promptText="Quantidade" />
+      <Label fx:id="lbID" alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="453.0" prefHeight="17.0" prefWidth="27.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Button fx:id="btReset" layoutX="881.0" layoutY="450.0" mnemonicParsing="false" styleClass="icon-button" stylesheets="@../styles/AlteraFundoBotaoJavaFX.css" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="Garamond" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
